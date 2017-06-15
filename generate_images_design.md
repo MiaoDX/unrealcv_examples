@@ -116,9 +116,28 @@ Total number: 8000
 
 [...]
 
+7750/8000 ... 2017-06-16 02:26:24
+7800/8000 ... 2017-06-16 02:26:33
+7850/8000 ... 2017-06-16 02:26:43
+7900/8000 ... 2017-06-16 02:26:53
+7950/8000 ... 2017-06-16 02:27:02
+After calc, success ratio:0.955375, fail ration:0.044625
 
+[...]
+
+ALL DONE
+1497551233.16
+Duration:1573.80028796s
 ```
+
+The fail above means the confidence if less than 0.8.
 
 
 ## The evaluation
+
+We do a very simple/ experiments, just plot the score and each of the 6-dof value of 8000 images, code can be found at [measure_faster_rcnn.py](measure_faster_rcnn.py)
+
+![6_dof_measure of 8000 images](pics/6_dof_measure.png)
+
+Though pretty simple, we can see from the picture that the algorithms suffers from the large relative distance and angle.
 
