@@ -115,14 +115,15 @@ def message_handler(message):
         image = client.request('vget /camera/0/lit')
         process_image(image)
 
-
+"""
 if __name__ == '__main__':
     if not net:
         print('Going to init the network')
         init_tf()
         print("init network done")
 
-        imfile = '/home/miao/virtual_world/LinuxNoEditor/RealisticRendering/Binaries/Linux/00000001.png'
+        imfile = '/home/miao/virtual_world/LinuxNoEditor/RealisticRendering/Binaries/00000001.png'
+        imfile = '/home/miao/virtual_world/LinuxNoEditor/RealisticRendering/Binaries/Linux_8000/Loc:00001.02_-0101.75_00209.94_Rot:-0039.95_00029.62_00049.50.png'
         #process_image(imfile)
         D.demo(sess, net, imfile)
         plt.show()
@@ -162,4 +163,3 @@ if __name__ == '__main__':
         plt.show()
         
     client.disconnect()
-"""

@@ -141,8 +141,7 @@ if __name__ == '__main__':
         import json
         camera_trajectory = json.load(open('camera_traj_simple.json'))
 
-        # we only test 5
-        camera_trajectory = camera_trajectory
+        #camera_trajectory = camera_trajectory
 
         print ("Total number: {}".format(len(camera_trajectory)))
 
